@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="70dp"
+    android:gravity="center_vertical|left"
+    >
+
+    <Spinner
+        android:id="@+id/questionSP"
+        android:layout_height="40dp"
+        android:layout_width="120dp"
+        android:textSize="14dp"
+        android:gravity="bottom|left"
+        android:focusable="true"
+        android:textColor="@color/N2U_black"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:hint="asdf"
+        />
+
+    <EditText
+        android:id="@+id/answerET"
+        android:layout_height="40dp"
+        android:layout_width="fill_parent"
+        android:textSize="14dp"
+        android:gravity="bottom|left"
+        android:layout_toRightOf="@id/questionSP"
+        android:focusable="true"
+        android:textColor="@color/N2U_black"
+        android:layout_marginBottom="10dp"
+        />
+
+
+</RelativeLayout>

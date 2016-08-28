@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@color/N2U_blue2"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/avatarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageButton
+            android:id="@+id/avatarBN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/add_picture"
+            android:layout_alignTop="@+id/backgroundIV"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="14dp"
+            android:paddingBottom="0dp"
+            android:scaleType="fitXY"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <ImageView
+            android:id="@+id/backgroundIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:src="@drawable/my_profile_border"
+            android:scaleType="fitStart"
+            />
+
+        <TextView
+            android:id="@+id/usernameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/N2U_black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/avatarBN"
+            android:layout_marginTop="1dp"
+            android:padding="0dp"
+            android:text="username"
+            />
+
+        <ImageButton
+            android:id="@+id/infoBN"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/info"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:scaleType="fitXY"
+            android:padding="0dp"
+            android:adjustViewBounds="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:paddingRight="4dp"
+        android:layout_below="@+id/avatarLayout"
+        >
+
+        <ProgressBar
+            android:id="@+id/loadingPB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/infoTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to your profile!"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+
+        <TextView
+            android:id="@+id/infoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_profile_info"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@+id/infoTitleTV"
+        />
+
+        <TextView
+            android:id="@+id/infoTipsTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_profile_info2"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@+id/infoTV"
+            />
+
+        <ImageView
+            android:id="@+id/infoImageIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infoTipsTV"
+            android:src="@drawable/nowhispers"
+            android:layout_centerHorizontal="true"
+            />
+
+        <com.woxthebox.draglistview.DragListView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/drag_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            />
+
+        <TextView
+            android:id="@+id/moreWhispersTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_whispers_info"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="16dp"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addBN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/plus"
+        android:clickable="true"
+        app:elevation="8dp"
+        app:backgroundTint="@color/N2U_orange"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:padding="0dp"
+        android:layout_marginRight="8dp"
+        />
+
+</RelativeLayout>

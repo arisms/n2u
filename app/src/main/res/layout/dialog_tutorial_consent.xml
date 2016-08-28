@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/N2U_blue2"
+    android:padding="8dp"
+    android:id="@+id/consentLayout"
+    >
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consent to Research"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nextBN"
+        android:layout_below="@id/titleTV"
+        android:padding="8dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Research -->
+            <ImageView
+                android:id="@+id/researchIV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/square"
+                android:paddingTop="8dp"
+                />
+
+            <TextView
+                android:id="@+id/researchTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N2U is for research"
+                android:layout_toRightOf="@+id/researchIV"
+                android:layout_alignTop="@+id/researchIV"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="6dp"
+                android:paddingBottom="8dp"
+                />
+
+            <TextView
+                android:id="@+id/researchText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/research0"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_below="@+id/researchIV"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                />
+
+
+            <!-- Data Collection -->
+            <ImageView
+                android:id="@+id/dataCollectionIV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/square"
+                android:paddingTop="8dp"
+                android:layout_below="@+id/researchText"
+                />
+
+            <TextView
+                android:id="@+id/dataCollectionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Collection"
+                android:layout_toRightOf="@+id/dataCollectionIV"
+                android:layout_alignTop="@+id/dataCollectionIV"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="6dp"
+                android:paddingBottom="8dp"
+                />
+
+            <TextView
+                android:id="@+id/dataCollectionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/consent2"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_below="@+id/dataCollectionIV"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <!-- Anonymity -->
+            <ImageView
+                android:id="@+id/anonymityIV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/square"
+                android:layout_below="@id/dataCollectionText"
+                android:paddingTop="8dp"
+                />
+
+            <TextView
+                android:id="@+id/anonymityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anonymity"
+                android:layout_toRightOf="@+id/anonymityIV"
+                android:layout_alignTop="@+id/anonymityIV"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="6dp"
+                android:paddingBottom="8dp"
+                />
+
+            <TextView
+                android:id="@+id/anonymityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/anonymity"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_below="@+id/anonymityIV"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <ImageView
+                android:id="@+id/stopIV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/square"
+                android:layout_below="@id/anonymityText"
+                android:paddingTop="8dp"
+                />
+
+            <!-- Quitting the study -->
+            <TextView
+                android:id="@+id/stopTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop using N2U"
+                android:layout_toRightOf="@+id/stopIV"
+                android:layout_alignTop="@+id/stopIV"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="6dp"
+                android:paddingBottom="8dp"
+                />
+
+            <TextView
+                android:id="@+id/stopText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stop"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_below="@+id/stopIV"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <!-- Background -->
+            <!--<ImageView-->
+                <!--android:id="@+id/backgroundIV"-->
+                <!--android:layout_width="18dp"-->
+                <!--android:layout_height="18dp"-->
+                <!--android:src="@drawable/square"-->
+                <!--android:layout_below="@id/stopText"-->
+                <!--android:paddingTop="8dp"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/backgroundTitle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Background"-->
+                <!--android:layout_toRightOf="@+id/backgroundIV"-->
+                <!--android:layout_alignTop="@+id/backgroundIV"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_marginLeft="6dp"-->
+                <!--android:paddingBottom="8dp"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/backgroundText"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/background"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_below="@+id/backgroundIV"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginBottom="16dp"-->
+                <!--/>-->
+
+            <!--&lt;!&ndash;Gender&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/genderLayout"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/backgroundText"-->
+                <!--android:gravity="center_vertical"-->
+                <!-->-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/genderTV"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:minWidth="100dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Gender"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textSize="17sp"-->
+                    <!--/>-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/maleRB"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:gravity="left"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/maleTV"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="M"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--/>-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/femaleRB"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/femaleTV"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="F"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--/>-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/otherRB"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/otherTV"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Other"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+                <!--android:id="@+id/line1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="2dp"-->
+                <!--android:background="@color/white"-->
+                <!--android:layout_below="@+id/genderLayout"-->
+                <!--android:layout_marginTop="12dp"-->
+                <!--android:layout_marginBottom="12dp"-->
+                <!--/>-->
+
+            <!--&lt;!&ndash;Age&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ageLayout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/line1"-->
+                <!-->-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/ageTV"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:minWidth="100dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Age"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textSize="17sp"-->
+                        <!--/>-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/ageET"-->
+                        <!--android:layout_width="64dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@color/N2U_grey"-->
+                        <!--android:textColor="@color/N2U_black"-->
+                        <!--android:layout_marginLeft="17dp"-->
+                        <!--android:inputType="number"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:hint="18-99"-->
+                        <!--android:textColorHint="@color/N2U_blue2"-->
+                        <!--android:textSize="17sp"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+                <!--android:id="@+id/line2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="2dp"-->
+                <!--android:background="@color/white"-->
+                <!--android:layout_below="@+id/ageLayout"-->
+                <!--android:layout_marginTop="12dp"-->
+                <!--android:layout_marginBottom="12dp"-->
+                <!--/>-->
+
+            <!--&lt;!&ndash;E-mail&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/emailLayout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/line2"-->
+                <!-->-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/emailTV"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:minWidth="100dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="E-mail"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textSize="17sp"-->
+                    <!--/>-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/emailET"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@color/N2U_grey"-->
+                    <!--android:textColor="@color/N2U_black"-->
+                    <!--android:layout_marginLeft="17dp"-->
+                    <!--android:singleLine="true"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+                <!--android:id="@+id/line3"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="2dp"-->
+                <!--android:background="@color/white"-->
+                <!--android:layout_below="@+id/emailLayout"-->
+                <!--android:layout_marginTop="12dp"-->
+                <!--android:layout_marginBottom="12dp"-->
+                <!--/>-->
+
+            <!--&lt;!&ndash;Community&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/communityLayout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/line3"-->
+                <!-->-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/communityTV"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:minWidth="100dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Community"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textSize="17sp"-->
+                    <!--/>-->
+
+                <!--<Spinner-->
+                    <!--android:id="@+id/communitySP"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@drawable/spinner"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:focusable="true"-->
+                    <!--android:layout_marginLeft="17dp"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+                <!--android:id="@+id/line4"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="2dp"-->
+                <!--android:background="@color/white"-->
+                <!--android:layout_below="@+id/communityLayout"-->
+                <!--android:layout_marginTop="12dp"-->
+                <!--android:layout_marginBottom="24dp"-->
+                <!--/>-->
+
+            <!--Agreement-->
+            <CheckBox
+                android:id="@+id/agreementCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stopText"
+                android:layout_marginLeft="-5dp"
+                />
+
+            <TextView
+                android:id="@+id/agreementTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@id/agreementCB"
+                android:text="@string/agreement2"
+                android:layout_below="@+id/line4"
+                android:layout_alignTop="@+id/agreementCB"
+                android:paddingTop="6dp"
+                android:textSize="15sp"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/nextBN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18dp"
+        android:text="Start using N2U"
+        android:background="@color/N2U_orange"
+        android:textColor="@color/white"
+        style="?android:attr/borderlessButtonStyle"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0.5"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        />
+
+</RelativeLayout>

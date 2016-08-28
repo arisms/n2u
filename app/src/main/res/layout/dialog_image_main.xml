@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center|top"
+    android:background="@drawable/n2u_01"
+    android:weightSum="1"
+    >
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageIV"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:src="@drawable/n2u_01"-->
+        <!--/>-->
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:id="@+id/person1BN"
+        android:layout_weight="0.35"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:id="@+id/person2BN"
+        android:layout_weight="0.2"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:id="@+id/person3BN"
+        android:layout_weight="0.10"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:id="@+id/person4BN"
+        android:layout_weight="0.15"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:id="@+id/person5BN"
+        android:layout_weight="0.2"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+</LinearLayout>

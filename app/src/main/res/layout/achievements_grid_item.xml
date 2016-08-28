@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:paddingLeft="4dp"
+    android:paddingBottom="4dp"
+    android:id="@+id/grid_item_achievements_layout"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:text="title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/N2U_black"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            />
+
+        <ImageView
+            android:id="@+id/rankIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/empty_token"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/titleTV"
+            />
+
+        <TextView
+            android:id="@+id/textTV"
+            android:text="text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/N2U_black"
+            android:textStyle="normal"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_below="@+id/rankIV"
+            android:layout_above="@+id/numbersTV"
+            />
+
+        <TextView
+            android:id="@+id/numbersTV"
+            android:text="0/0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/N2U_black"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

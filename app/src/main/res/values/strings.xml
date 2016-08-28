@@ -1,0 +1,59 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Next to You</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="blank">&lt;Leave blank></string>
+
+    <string-array name="questions_array">
+        <item>&lt;You may choose a start for your whisper></item>
+        <item>I am...</item>
+        <item>I like...</item>
+        <item>I dislike...</item>
+        <item>Someday I will...</item>
+        <item>I hope...</item>
+        <item>My superpower is...</item>
+        <item>Did you know that...</item>
+        <item>Today...</item>
+        <item>Would you like...</item>
+        <item>I dare you to...</item>
+        <item>We should...</item>
+    </string-array>
+
+    <string-array name="communities_array">
+        <item>Tampere/student</item>
+        <item>Tampere/staff</item>
+        <item>Brno/student</item>
+        <item>Brno/staff</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty_profile_info">Before you can see what the others are Whispering, you also need to share something! The more Whispers you share the more you can receive from others. </string>
+    <string name="empty_profile_info2">Use the \'plus\' icon to add a new whisper, or tap on an existing one to modify it.</string>
+    <string name="more_whispers_info">Share at least 3 whispers to join the fun!</string>
+    <string name="more_whispers_dialog">Please share more whispers! The more you share, the more you can receive.</string>
+    <string name="empty_connections_list">
+        It seems that you haven’t discovered other users yet.\nGo exploring your surroundings or just carry the device around with you like normally.\nN2U will automatically exchange Whispers when you come close enough to another user!</string>
+    <string name="empty_connections_list_no_whispers">
+        It seems that you haven’t shared a Whisper yet.\nTap on the top right icon to go to your profile and share a Whisper! Then go exploring your surroundings or just carry the device around with you like normally.\nN2U will automatically exchange Whispers when you come close enough to another user!</string>
+    <string name="empty_clues_other">You have not received any whispers from this user.\nTry again later!</string>
+
+    <!--Tutorial Text:-->
+    <string name="consent">The content of your shared whispers, as well as general usage activity will be gathered and may be analyzed by researchers in Tampere University of Technology. This is done solely for academic research purposes..</string>
+    <string name="consent2">The content of your shared whispers, as well as general usage activity will be gathered and may be analyzed by researchers in Tampere University of Technology.</string>
+    <string name="anonymity">All the gathered data will be treated anonymously. Some of the data might be used in scientific publications. We will not disclose any such information that would allow identifying a specific person.</string>
+    <string name="stop">You may at any time stop using N2U and quit the study. To make your whispers no longer available for other users, please go to your Profile and select Deactivate. Note that all the content until this will nevertheless be accessible by the researchers.</string>
+    <string name="background">We now kindly ask you to fill in your background information and e-mail address that you’re actively following. The contact information will not be linked to any other data about you and is only meant for sending out the questionnaires and possible raffle prizes.</string>
+    <string name="agreement">I have read and understood the information about the application and the study, and consent to participate under these terms.</string>
+    <string name="agreement2">I have read and understood the information about the application and its relation to academic research, and consent to participate under these terms.</string>
+    <string name="about1">N2U is a social mobile app for interacting with people nearby. “Whisper” something – only the people near enough will “hear” it.</string>
+    <string name="about2">Whenever two users get close enough, both will <b><i>automatically</i></b> receive a whisper from each other. Just keep your Bluetooth always on!</string>
+    <string name="about3">The Whispers are shared one at a time. The more you meet, the more Whispers you exchange. The more Whispers you share, the more you can also receive.</string>
+    <string name="about4">Exchanging Whispers with the same user can happen once every 2 hours but <b><i>Messaging</i></b> can be done at any time.</string>
+    <string name="about5">Be social in a playful way: Collect and explore others’ profiles. Send a Message to them or suggest seeing face-to-face! Earn achievements by doing all this!</string>
+    <string name="research1">Next to You is a research prototype developed at Dep. of Pervasive Computing, Tampere University of Technology. We want to see how it works in the real world!</string>
+    <string name="research2">By using the application, you will be a voluntary participant in academic research. We may analyze the content of your whispers and your general usage activity.</string>
+    <string name="research0">N2U is a research prototype developed at Dept. of Pervasive Computing, Tampere University of Technology. We want to see how it works in the real world. By using the application, you will be a voluntary participant in academic research.</string>
+
+</resources>

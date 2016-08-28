@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="fi.tut.cs.social.proximeety.Fragments.LogInRegisterFragment"
+    android:background="@color/N2U_blue2"
+    >
+    
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/logo_letters"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="32dp"
+        android:padding="0dp"
+        />
+
+    <EditText
+        android:id="@+id/usernameET"
+        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:gravity="bottom|left"
+        android:layout_centerInParent="true"
+        android:hint="Username"
+        android:textColor="@color/N2U_black"
+        android:textColorHint="@color/N2U_orange"
+        android:background="@color/white"
+        android:singleLine="true"
+        android:padding="8dp"
+        android:layout_marginBottom="4dp"
+        />
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_centerInParent="true"
+        android:gravity="bottom|left"
+        android:layout_below="@+id/usernameET"
+        android:inputType="textPassword"
+        android:textStyle="normal"
+        android:hint="Password"
+        android:textColorHint="@color/N2U_orange"
+        android:textColor="@color/N2U_black"
+        android:background="@color/white"
+        android:singleLine="true"
+        android:padding="8dp"
+        />
+
+    <Button
+        android:id="@+id/loginBN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Log in with an existing account"
+        android:textColor="@color/N2U_blue1"
+        style="?android:attr/borderlessButtonStyle"
+        android:textAllCaps="false"
+        android:layout_below="@+id/passwordET"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/registerBN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/N2U_orange"
+            android:textSize="18sp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.5"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="4dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

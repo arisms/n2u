@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/N2U_blue2"
+    android:padding="8dp"
+    android:id="@+id/consentLayout"
+    >
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consent to Research"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/okBN"
+        android:layout_below="@id/titleTV"
+        android:padding="8dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Data Collection -->
+            <ImageView
+                android:id="@+id/dataCollectionIV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/square"
+                android:paddingTop="8dp"
+                />
+
+            <TextView
+                android:id="@+id/dataCollectionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Collection"
+                android:layout_toRightOf="@+id/dataCollectionIV"
+                android:layout_alignTop="@+id/dataCollectionIV"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="6dp"
+                android:paddingBottom="8dp"
+                />
+
+            <TextView
+                android:id="@+id/dataCollectionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/consent"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_below="@+id/dataCollectionIV"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <!-- Anonymity -->
+            <ImageView
+                android:id="@+id/anonymityIV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/square"
+                android:layout_below="@id/dataCollectionText"
+                android:paddingTop="8dp"
+                />
+
+            <TextView
+                android:id="@+id/anonymityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anonymity"
+                android:layout_toRightOf="@+id/anonymityIV"
+                android:layout_alignTop="@+id/anonymityIV"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="6dp"
+                android:paddingBottom="8dp"
+                />
+
+            <TextView
+                android:id="@+id/anonymityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/anonymity"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_below="@+id/anonymityIV"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <ImageView
+                android:id="@+id/stopIV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/square"
+                android:layout_below="@id/anonymityText"
+                android:paddingTop="8dp"
+                />
+
+            <!-- Stop using N2U -->
+            <TextView
+                android:id="@+id/stopTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop using N2U"
+                android:layout_toRightOf="@+id/stopIV"
+                android:layout_alignTop="@+id/stopIV"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="6dp"
+                android:paddingBottom="8dp"
+                />
+
+            <TextView
+                android:id="@+id/stopText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stop"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_below="@+id/stopIV"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/okBN"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="18dp"
+        android:text="OK"
+        android:background="@color/N2U_orange"
+        android:textColor="@color/white"
+        style="?android:attr/borderlessButtonStyle"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0.5"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        />
+
+</RelativeLayout>

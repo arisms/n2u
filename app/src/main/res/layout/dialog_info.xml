@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:text="Information"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/N2U_blue1"
+        android:contentDescription="@string/app_name"
+        android:padding="16dp"
+        />
+
+
+    <Button
+        android:id="@+id/aboutBN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="About N2U"
+        android:layout_below="@+id/titleTV"
+        style="?android:attr/borderlessButtonStyle"
+        android:textAllCaps="false"
+        android:textColor="@color/N2U_blue1"
+        android:gravity="left|center_vertical"
+        android:padding="18dp"
+        />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/N2U_blue2"
+        android:layout_below="@id/aboutBN"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+    <Button
+        android:id="@+id/consentBN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Research consent"
+        android:layout_below="@+id/line1"
+        style="?android:attr/borderlessButtonStyle"
+        android:textAllCaps="false"
+        android:textColor="@color/N2U_blue1"
+        android:gravity="left|center_vertical"
+        android:padding="18dp"
+        />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/N2U_blue2"
+        android:layout_below="@id/consentBN"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+    <Button
+        android:id="@+id/deactivateBN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Deactivate your profile"
+        android:layout_below="@+id/line2"
+        style="?android:attr/borderlessButtonStyle"
+        android:textAllCaps="false"
+        android:textColor="@color/N2U_blue1"
+        android:gravity="left|center_vertical"
+        android:padding="18dp"
+        />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/N2U_blue2"
+        android:layout_below="@id/deactivateBN"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+    <Button
+        android:id="@+id/contactBN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Contact the developers"
+        android:layout_below="@+id/line3"
+        style="?android:attr/borderlessButtonStyle"
+        android:textAllCaps="false"
+        android:textColor="@color/N2U_blue1"
+        android:gravity="left|center_vertical"
+        android:padding="18dp"
+        />
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/N2U_blue2"
+        android:layout_below="@id/contactBN"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+</RelativeLayout>

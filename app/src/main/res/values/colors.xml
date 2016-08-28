@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+
+    <!-- FINAL UI -->
+    <color name="clear">#80FFFFFF</color>
+    <color name="N2U_blue1">#00BCD4</color>
+    <color name="N2U_blue2">#80DEEA</color>
+    <color name="N2U_black">#424242</color>
+    <color name="N2U_blackTransparent">#30424242</color>
+    <color name="N2U_whiteTransparent">#80FFFFFF</color>
+    <color name="N2U_grey">#E0E0E0</color>
+    <color name="N2U_orange">#FFA000</color>
+    <color name="N2U_red1">#F06292</color>
+    <color name="N2U_red2">#F48FB1</color>
+
+</resources>

@@ -1,0 +1,107 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainFragment"
+    android:gravity="right"
+    android:background="@color/white"
+    android:isScrollContainer="false"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/N2U_blue1"
+        android:layout_marginBottom="4dp"
+        >
+
+        <ImageButton
+            android:id="@+id/backBN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="8dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/usernameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="asdf"
+            android:textColor="@color/N2U_black"
+            android:gravity="right"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="14dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_gravity="right"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideOverlay"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/N2U_blue1"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:gravity="left|center_vertical"
+        android:padding="8dp"
+        >
+
+        <EditText
+            android:id="@+id/inputTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type message here..."
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColorHint="@color/N2U_grey"
+            android:textColor="@color/N2U_black"
+            android:textSize="16sp"
+            />
+
+        <Button
+            android:id="@+id/sendBN"
+            android:layout_width="wrap_content"
+            android:minWidth="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="Send"
+            android:textColor="@color/N2U_black"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center|bottom"
+    android:isScrollContainer="false"
+    android:background="@color/N2U_blue1"
+    >
+
+    <ImageButton
+        android:id="@+id/achievementsBN"
+        android:layout_width="wrap_content"
+        android:minWidth="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:src="@mipmap/achievements_icon"
+        style="?android:attr/borderlessButtonStyle"
+        android:padding="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <ImageButton
+        android:id="@+id/connectionsBN"
+        android:layout_width="wrap_content"
+        android:minWidth="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:src="@mipmap/n2u_icon"
+        style="?android:attr/borderlessButtonStyle"
+        android:padding="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageButton
+        android:id="@+id/avatarBN"
+        android:layout_width="wrap_content"
+        android:minWidth="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:src="@mipmap/profile_icon"
+        style="?android:attr/borderlessButtonStyle"
+        android:padding="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

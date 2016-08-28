@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/N2U_blue2"
+    android:padding="8dp"
+    android:id="@+id/infoAboutLayout"
+    >
+
+    <ScrollView
+        android:id="@+id/aboutSV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTV"
+        android:layout_above="@+id/okBN"
+        android:padding="8dp"
+        android:layout_alignParentTop="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <!--Contact 1-->
+            <ImageView
+                android:id="@+id/contact1IV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/square"
+                android:paddingTop="8dp"
+                />
+
+            <TextView
+                android:id="@+id/contact1TitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aris Malapaschas - Developer"
+                android:layout_toRightOf="@+id/contact1IV"
+                android:layout_alignTop="@+id/contact1IV"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="6dp"
+                android:paddingBottom="8dp"
+                />
+
+            <TextView
+                android:id="@+id/contact1TextTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aris.malapaschas@gmail.com"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:layout_below="@+id/contact1TitleTV"
+                android:layout_marginTop="8dp"
+                />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_below="@+id/contact1TextTV"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                />
+
+            <!--Contact 2-->
+            <ImageView
+                android:id="@+id/contact2IV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/square"
+                android:paddingTop="8dp"
+                android:layout_below="@+id/line1"
+                />
+
+            <TextView
+                android:id="@+id/contact2TitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Susanna Paasovaara - Researcher"
+                android:layout_toRightOf="@+id/contact2IV"
+                android:layout_alignTop="@+id/contact2IV"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="6dp"
+                android:paddingBottom="8dp"
+                />
+
+            <TextView
+                android:id="@+id/contact2TextTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="susanna.paasovaara@tut.fi"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:layout_below="@+id/contact2TitleTV"
+                android:layout_marginTop="4dp"
+                />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_below="@+id/contact2TextTV"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                />
+
+            <!--Contact 3-->
+            <ImageView
+                android:id="@+id/contact3IV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/square"
+                android:paddingTop="8dp"
+                android:layout_below="@+id/line2"
+                />
+
+            <TextView
+                android:id="@+id/contact3TitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ekaterina Olshannikova - Designer"
+                android:layout_toRightOf="@+id/contact3IV"
+                android:layout_alignTop="@+id/contact3IV"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="6dp"
+                android:paddingBottom="8dp"
+                />
+
+            <TextView
+                android:id="@+id/contact3TextTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ekaterina.olshannikova@tut.fi"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:layout_below="@+id/contact3TitleTV"
+                android:layout_marginTop="4dp"
+                />
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_below="@+id/contact3TextTV"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                />
+
+            <!--Contact 4-->
+            <ImageView
+                android:id="@+id/contact4IV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/square"
+                android:paddingTop="8dp"
+                android:layout_below="@+id/line3"
+                />
+
+            <TextView
+                android:id="@+id/contact4TitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thomas Olsson - Researcher"
+                android:layout_toRightOf="@+id/contact4IV"
+                android:layout_alignTop="@+id/contact4IV"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="6dp"
+                android:paddingBottom="8dp"
+                />
+
+            <TextView
+                android:id="@+id/contact4TextTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="thomas.olsson@tut.fi"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:layout_below="@+id/contact4TitleTV"
+                android:layout_marginTop="4dp"
+                />
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_below="@+id/contact4TextTV"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/okBN"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:text="OK"
+        android:background="@color/N2U_orange"
+        android:textColor="@color/white"
+        style="?android:attr/borderlessButtonStyle"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        />
+
+</RelativeLayout>
