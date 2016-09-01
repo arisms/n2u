@@ -33,9 +33,6 @@ Next to you  is an experimental social application that was developed within the
 Based on proximity, it allows users to automatically exchange pieces of information, called Whispers, with the other users that bass them by.
 <img src="http://i.imgur.com/r68qyM9.png" alt=""></p>
 
-<p>The Android app can be installed from Google Play store:<br>
-<a href="https://play.google.com/store/apps/details?id=fi.tut.cs.social.proximeety&amp;hl=en"><img src="http://i.imgur.com/3haJTJ7.png?1" alt=""></a></p>
-
 <h1>
 <a id="app-description" class="anchor" href="#app-description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>App Description</h1>
 
@@ -44,8 +41,8 @@ Based on proximity, it allows users to automatically exchange pieces of informat
 <p>The main view contains a list of connections discovered by the user. The first time two users are within each other’s proximity (Bluetooth range), a connection between them is created, and their first whispers are exchanged. A user can edit her whispers and rearrange their order, determining which will be received first by her connections.</p>
 
 <p><img src="http://i.imgur.com/AWlMrOd.gif" alt="">
-<code>_Creating a new whisper and rearranging the whispers' order_</code>
-<code>_The order of whispers on the profile determines the order in which they will be received by other users_</code></p>
+<em>Creating a new whisper and rearranging the whispers' order</em>
+<em>The order of whispers on the profile determines the order in which they will be received by other users</em></p>
 
 <p>If two users meet again (after at least 5 hours have passed), another exchange of whispers automatically takes place. Users cannot receive more whispers (from each connection) than they have created in their own profile. By tapping on a connection, a user can view another user’s profile, containing the whispers they have received from them (depending on how many times they have met). The user can tap and hold on a whisper to like it.</p>
 
@@ -64,8 +61,17 @@ Based on proximity, it allows users to automatically exchange pieces of informat
 <p><img src="http://i.imgur.com/uTLE8vE.png" alt="">
 <em>The chat view and the Face-to_Face confirmation game</em></p>
 
-<h2>
-<a id="implementation" class="anchor" href="#implementation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implementation</h2>
+<h1>
+<a id="technical-features" class="anchor" href="#technical-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Technical Features</h1>
+
+<p>The first service <a href="https://github.com/nullbuilt/proximeety.js">-code here-</a> provides a REST API for CRUD operations on a Mongo database. The client (Android app) uses HTTP requests to write or read data from the database, via the <a href="https://developer.android.com/training/volley/index.html">Volley</a> library (requests and responses are bundled in JSON objects).</p>
+
+<p>The second service <a href="https://github.com/nullbuilt/proxisocketapp">-code here-</a> uses sockets connections with the client apps (using <a href="http://socket.io/">SocketIO</a> for both <a href="https://github.com/nkzawa/socket.io-android-chat">client</a> and server) and is responsible for the chatting, Face-to-Face confirmation and push notification features of the app (real-time features). There is also a server-side only communication between the two services.</p>
+
+<p>The Android app <a href="https://github.com/nullbuilt/n2u">-code here-</a> creates a Service, which is responsible for the periodic task of proximity scanning (with Bluetooth) and listening for incoming messages through the socket connection. The drag&amp;drop list view used on the profile view was based on <a href="https://github.com/woxblom/DragListView">-this code-</a>.</p>
+
+<p>The Android app can be installed from Google Play store:<br>
+<a href="https://play.google.com/store/apps/details?id=fi.tut.cs.social.proximeety&amp;hl=en"><img src="http://i.imgur.com/3haJTJ7.png?1" alt=""></a></p>
         </section>
 
         <aside id="sidebar">
