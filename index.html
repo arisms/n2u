@@ -29,17 +29,15 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h1>Overview</h1>
-          <p>Next to you 2 is an experimental social application that was developed within the scope of <a href="http://www.tut.fi/en/social-technologies/solutions--publications/index.htm">Social Technologies</a> project, in Tampere University of Technology.
-Based on proximity, it allows users to automatically exchange pieces of information, called Whispers, with the other users that bass them by.
-<img src="http://i.imgur.com/r68qyM9.png" alt=""></p>
-          <p>asdf</p>
+          <p>This research examines the potential that proximity-based applications can have in encouraging interaction between nearby people.
+            Next to you, a prototype social application developed at the <a href="http://www.tut.fi/en/social-technologies/solutions--publications/index.htm">University of Tampere</a> applies gamification to increase awareness of nearby people and encourage social interaction, by 
+            
 
-<h1>
-<a id="app-description" class="anchor" href="#app-description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>App Description</h1>
+<h2><a id="app-description" class="anchor" href="#app-description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>App Description</h2>
 
 <p>The users create their profile by uploading a profile picture and inserting “whispers”. After at least one whisper has been saved, the user’s profile is activated and can be discovered by other users.</p>
 
-<p>The main view contains a list of connections discovered by the user. The first time two users are within each other’s proximity (Bluetooth range), a connection between them is created, and their first whispers are exchanged. A user can edit her whispers and rearrange their order, determining which will be received first by her connections.</p>
+<p>The main view contains a list of connections discovered by the user. The first time two users are within each other’s proximity (Bluetooth range), a connection between them is created, and their first whispers are exchanged. Users can edit their whispers and rearrange their order, determining which will be received first by their connections.</p>
 
 <p><img src="http://i.imgur.com/AWlMrOd.gif" alt="">
 <em>Creating a new whisper and rearranging the whispers' order</em>
@@ -55,24 +53,26 @@ Based on proximity, it allows users to automatically exchange pieces of informat
 <p><img src="http://i.imgur.com/uFtQJJI.png" alt="">
 <em>A connection's profile. The user can like one of their whispers by tapping and holding</em></p>
 
-<p>The users are awarded with unlocking achievements for using the application further: collecting more profiles, receiving many likes for a whisper, sending and receiving messages etc. Each achievement has three ranks; bronze, silver and gold.</p>
-
-<p>The app also features push notifications. The users are notified when a new contact is in proximity, or when they have received a new whisper from an existing connection, when one of their whispers has been liked, when they have received a message or F2F request, when they have unlocked an achievement etc.</p>
+<p>The users are awarded with unlocking achievements for using the application further: collecting more profiles, receiving many likes for a whisper, sending and receiving messages etc. Each achievement has three ranks; bronze, silver and gold. 
+ The users are notified when a new contact is in proximity through push notifications, or when they have received a new whisper from an existing connection, when one of their whispers has been liked, when they have received a message or F2F request, or when they have unlocked an achievement.</p>
 
 <p><img src="http://i.imgur.com/uTLE8vE.png" alt="">
 <em>The chat view and the Face-to_Face confirmation game</em></p>
 
-<h1>
-<a id="technical-features" class="anchor" href="#technical-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Technical Features</h1>
+<h2>Methods</h2>
+          <p>A set of focus groups were conducted to evaluate the design concept (n=18) participants. Based on the results, there was a second development iteration to improve the design and add additional features.</br>
+        A <i>field trial</i> with 162 participants was conducted to evaluate the effectiveness of the application, investigating the overall user experience over a period of seven weeks.</p>
+          
+<h2>
+<a id="technical-features" class="anchor" href="#technical-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implementation</h2>
 
-<p>The first service <a href="https://github.com/nullbuilt/proximeety.js">-code here-</a> provides a REST API for CRUD operations on a Mongo database. The client (Android app) uses HTTP requests to write or read data from the database, via the <a href="https://developer.android.com/training/volley/index.html">Volley</a> library (requests and responses are bundled in JSON objects).</p>
+<p>The <a href="https://github.com/nullbuilt/proximeety.js">first service</a> provides a REST API for CRUD operations on a Mongo database. The client (Android app) uses HTTP requests to write or read data from the database, via the <a href="https://developer.android.com/training/volley/index.html">Volley</a> library (requests and responses are bundled in JSON objects).</p>
 
-<p>The second service <a href="https://github.com/nullbuilt/proxisocketapp">-code here-</a> uses sockets connections with the client apps (using <a href="http://socket.io/">SocketIO</a> for both <a href="https://github.com/nkzawa/socket.io-android-chat">client</a> and server) and is responsible for the chatting, Face-to-Face confirmation and push notification features of the app (real-time features). There is also a server-side only communication between the two services.</p>
+<p>The <a href="https://github.com/nullbuilt/proxisocketapp">second service</a> uses socket connections with the client apps (using <a href="http://socket.io/">SocketIO</a> for both <a href="https://github.com/nkzawa/socket.io-android-chat">the client</a> and the server) and is responsible for the chatting, Face-to-Face confirmation and push notification features of the app (real-time features). There is also a server-side only communication between the two services.</p>
 
-<p>The Android app <a href="https://github.com/nullbuilt/n2u">-code here-</a> creates a Service, which is responsible for the periodic task of proximity scanning (with Bluetooth) and listening for incoming messages through the socket connection. The drag&amp;drop list view used on the profile view was based on <a href="https://github.com/woxblom/DragListView">-this code-</a>.</p>
+<p>The <a href="https://github.com/nullbuilt/n2u">Android app</a> creates a Service, which is responsible for the periodic task of proximity scanning (with Bluetooth) and listening for incoming messages through the socket connection. The drag&amp;drop list view used on the profile view was based on <a href="https://github.com/woxblom/DragListView">-this code-</a>.</p>
 
-<p>Get on Google Play:<br>
-<a href="https://play.google.com/store/apps/details?id=fi.tut.cs.social.proximeety&amp;hl=en"><img src="http://i.imgur.com/3haJTJ7.png?1" alt=""></a></p>
+<p><a href="https://play.google.com/store/apps/details?id=fi.tut.cs.social.proximeety&amp;hl=en"><img src="http://i.imgur.com/3haJTJ7.png?1" alt=""></a></p>
         </section>
 
         <aside id="sidebar">
